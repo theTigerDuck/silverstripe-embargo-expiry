@@ -21,9 +21,9 @@
   },
   "require": {
     "php": "^8",
-    "silverstripe/cms": "^5",
-    "symbiote/silverstripe-queuedjobs": "^5",
-    "opis/closure": "^3.6"
+    "silverstripe/cms": "*",
+    "symbiote/silverstripe-queuedjobs": "*",
+    "opis/closure": "*"
   },
   "require-dev": {
     "silverstripe/recipe-testing": "^3",
