@@ -10,7 +10,7 @@ use SilverStripe\Forms\FormAction;
 use SilverStripe\Forms\HeaderField;
 use SilverStripe\Forms\LiteralField;
 use SilverStripe\Forms\ReadonlyField;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\ORM\FieldType\DBDatetime;
 use SilverStripe\ORM\ValidationResult;
@@ -36,7 +36,7 @@ use Terraformers\EmbargoExpiry\Job\UnPublishTargetJob;
  * @method QueuedJobDescriptor PublishJob()
  * @method QueuedJobDescriptor UnPublishJob()
  */
-class EmbargoExpiryExtension extends DataExtension implements PermissionProvider
+class EmbargoExpiryExtension extends Extension implements PermissionProvider
 {
     public const PERMISSION_ADD = 'AddEmbargoExpiry';
     public const PERMISSION_REMOVE = 'RemoveEmbargoExpiry';
